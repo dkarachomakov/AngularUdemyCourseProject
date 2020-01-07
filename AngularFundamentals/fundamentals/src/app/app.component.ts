@@ -20,6 +20,9 @@ export class AppComponent {
     likesCount: 3
   }
 
+  courses = [1,2];
+  viewMode = 'map';
+
   onFavoriteChange(eventArgs: FavoriteChangedEventArgs) {
     console.log('Favorite changed', eventArgs);
   }
