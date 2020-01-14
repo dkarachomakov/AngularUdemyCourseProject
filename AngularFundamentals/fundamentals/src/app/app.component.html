@@ -36,6 +36,7 @@
 
 <br/>
 
+<!-- Tabs -->
 <ul class="nav nav-pills">
   <li class="nav-item">
     <a class="nav-link" [class.active]="viewMode === 'map'" (click)="viewMode = 'map'" data-toggle="pill">Map View</a>
@@ -50,3 +51,15 @@
   <div *ngSwitchCase="'list'">List View Content</div>
   <div *ngSwitchDefault>Otherwise</div>
 </div>
+<!-- /Tabs -->
+
+<!--For-->
+<button (click)="onLoadCourses()">Load Courses</button>
+<button (click)="onAdd()">add</button>
+<ul>
+  <li *ngFor="let course of courseObjects; trackBy: trackCourseById; index as i; even as isEven" >
+    {{i}} - {{ course.name }} <span *ngIf="isEven">(EVEN)</span> <button (click)="onRemove(course)">Remove</button> <button (click)="onUpdate(course)">Update</button>
+  </li>
+</ul>
+
+<!--/For-->

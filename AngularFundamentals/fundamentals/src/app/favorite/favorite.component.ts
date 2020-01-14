@@ -5,6 +5,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   selector: 'favorite',
   template: `
                     <i class='fa-star' [class.fas]="isFavorite" [class.far]="!isFavorite" (click)="onClick();"></i>
+                    favourite 2
+                    <i class='fa-star' [ngClass]="{'class.fas': isFavorite, 'class.far': !isFavorite}" (click)="onClick();"></i>
   `,
 
 })
