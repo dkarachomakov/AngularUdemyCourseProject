@@ -9,3 +9,7 @@ body { padding: 20px; }
 .red-color-test{
     background: red;
 }
+
+.form-control.ng-touched.ng-invalid {
+    border: 2px solid red;
+}

@@ -14,6 +14,8 @@ import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
 import { InputFormatDirective } from './input-format.directive';
 import { ZippyComponent } from './zippy/zippy.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { TempateDrivenFormFirstComponent } from './tempate-driven-form-first/tempate-driven-form-first.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ZippyComponent } from './zippy/zippy.component';
     PanelComponent,
     LikeComponent,
     InputFormatDirective,
-    ZippyComponent
+    ZippyComponent,
+    ContactFormComponent,
+    TempateDrivenFormFirstComponent
   ],
   imports: [
     BrowserModule,

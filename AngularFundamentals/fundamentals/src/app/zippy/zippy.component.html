@@ -1,1 +1,7 @@
-<p>zippy works!</p>
+<div class="zippy">
+    <div class="zippy-heading" [class.expanded]="isExpanded" (click)="onTitleClick()">
+        {{title}}
+        <i class="fas zippy-right-icon" [class.fa-angle-down]="!isExpanded" [class.fa-angle-up]="isExpanded"></i>
+    </div>
+    <div class="zippy-body" *ngIf="isExpanded"><ng-content></ng-content></div>
+</div>

@@ -1,5 +1,11 @@
 <h1>Angular</h1>
 
+<!-- First Test Template driven Form-->
+<zippy title="Template drive form">
+  <tempate-driven-form-first></tempate-driven-form-first>
+</zippy>
+<!-- /First Test Template driven Form-->
+
 <courses></courses>
 <authors></authors>
 <favorite [is-favorite]="post.isFavorite" (change)="onFavoriteChange($event)"></favorite>
@@ -68,3 +74,15 @@
 <!-- directive -->
 <input type="text" [appInputFormat]="'uppercase'" />
 <!-- /directive -->
+
+<!-- zippy -->
+<zippy title="Shipping Details">
+  Shipping Details Content
+</zippy>
+<zippy title="Billing Details">
+  Billing Details Content
+</zippy>
+<!-- /zippy -->
+
+
+<contact-form></contact-form>
