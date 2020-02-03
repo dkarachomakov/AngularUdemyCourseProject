@@ -1,7 +1,7 @@
 import { SummaryPipe } from './summary.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +16,8 @@ import { InputFormatDirective } from './input-format.directive';
 import { ZippyComponent } from './zippy/zippy.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { TempateDrivenFormFirstComponent } from './tempate-driven-form-first/tempate-driven-form-first.component';
+import { CourseNameCategoryMoneyBackComponent } from './course-name-category-money-back/course-name-category-money-back.component';
+import { SignupFormComponent } from './signup-form/signup-form.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,14 @@ import { TempateDrivenFormFirstComponent } from './tempate-driven-form-first/tem
     InputFormatDirective,
     ZippyComponent,
     ContactFormComponent,
-    TempateDrivenFormFirstComponent
+    TempateDrivenFormFirstComponent,
+    CourseNameCategoryMoneyBackComponent,
+    SignupFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     FormsModule
   ],
   providers: [CouresService],
