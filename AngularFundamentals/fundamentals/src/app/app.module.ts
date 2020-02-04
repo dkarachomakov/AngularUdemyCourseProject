@@ -19,6 +19,7 @@ import { TempateDrivenFormFirstComponent } from './tempate-driven-form-first/tem
 import { CourseNameCategoryMoneyBackComponent } from './course-name-category-money-back/course-name-category-money-back.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { NewCourseFormComponent } from './new-course-form/new-course-form.compon
     TempateDrivenFormFirstComponent,
     CourseNameCategoryMoneyBackComponent,
     SignupFormComponent,
-    NewCourseFormComponent
+    NewCourseFormComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,
