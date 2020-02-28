@@ -24,6 +24,8 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { PostsComponent } from './posts/posts.component';
 import { PostService } from './services/post.service';
 import { AppErrorHandler } from './common/app-error-handler';
+import { MoshFollowersComponent } from './mosh-followers/mosh-followers.component';
+import { MoshFollowersService } from './services/mosh-followers.service';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,8 @@ import { AppErrorHandler } from './common/app-error-handler';
     SignupFormComponent,
     NewCourseFormComponent,
     ResetPasswordComponent,
-    PostsComponent
+    PostsComponent,
+    MoshFollowersComponent
   ],
   imports: [
     BrowserModule,
@@ -55,6 +58,7 @@ import { AppErrorHandler } from './common/app-error-handler';
   providers: [
     CouresService,
 	PostService,
+	MoshFollowersService,
 	{ provide: ErrorHandler, useClass: AppErrorHandler }
   ],
   bootstrap: [AppComponent]
